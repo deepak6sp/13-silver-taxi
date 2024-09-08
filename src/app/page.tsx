@@ -2,6 +2,8 @@ import Navbar from "./components/navbar"
 import Banner from "./components/banner"
 import Booking from "./components/booking"
 import Services from "./components/services"
+import Stats from "./components/stats"
+import Footer from "./components/footer"
 
 export default function Example() {
 
@@ -10,7 +12,9 @@ export default function Example() {
       <Navbar />
       <Banner />
       <Booking />
+      <Stats />
       <Services />
+      <Footer />
     </>
   )
 }

@@ -35,12 +35,12 @@ const Banner = () => {
             <section className={`${styles.overlay} h-screen relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 `}>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
                     {/* <h2 className="text-4xl font-bold tracking-tight text-rose-600 sm:text-8xl font-mono">13 SILVER TAXI</h2> */}
-                    <h6 className="mt-12 text-2xl font-bold tracking-tight text-white sm:text-2xl font-sans text-white">Upto 25% off on first booking</h6>
+                    <h6 className="mt-32 text-2xl font-bold tracking-tight text-white sm:text-2xl font-sans text-white">Upto 25% off on first booking</h6>
                     <button
                         type="button"
-                        className="mt-12 inline-flex items-center rounded-md bg-rose-600 px-12 py-6 text-sm font-semibold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="mt-12 inline-flex items-center rounded-md bg-rose-600 px-6 sm:px-24 py-3 sm:py-6 text-sm font-semibold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600"
                     >
-                        <a href="#" className="text-3xl font-bold leading-6">
+                        <a href="#" className="font-bold leading-6 sm:text-base">
                             BOOK NOW <span aria-hidden="true">&rarr;</span>
                         </a>
                     </button>

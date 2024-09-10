@@ -1,9 +1,11 @@
 
 .overlay {
     position: relative;
+    background-image: url('../images/taxi1.jpg');
+    background-size: cover;
   }
   
-  .overlay::before {
+  /* .overlay::before {
     content: "";
     display: block;
     position: absolute;
@@ -13,5 +15,5 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
-  }
+  } */
   

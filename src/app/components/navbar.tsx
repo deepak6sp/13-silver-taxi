@@ -53,21 +53,21 @@ const Navbar = () => {
                         <InboxIcon aria-hidden="true" className="rounded-full h-12 w-12 p-3 text-rose-600 border-2 border-rose-600" />
                         <a href="#" className="ml-2 flex flex-col">
                             <span className='text-rose-600 font-semibold'>Servicing</span>
-                            <span>Melbourne</span>
+                            <span className='text-slate-600'>Melbourne</span>
                         </a>
                     </div>
                     <div className="flex lg:flex-1 mt-8 sm:mt-0">
                         <PhoneIcon aria-hidden="true" className="rounded-full h-12 w-12 p-3 text-rose-600 border-2 border-rose-600" />
                         <a href="#" className="ml-2 flex flex-col">
                             <span className='text-rose-600 font-semibold'>Phone</span>
-                            <span>1300 123 456</span>
+                            <span className='text-slate-600'>1300 123 456</span>
                         </a>
                     </div>
                     <div className="flex lg:flex-1 mt-8 sm:mt-0">
                         <EnvelopeIcon aria-hidden="true" className="rounded-full h-12 w-12 p-3 text-rose-600 border-2 border-rose-600" />
                         <a href="#" className="ml-2 flex flex-col">
                             <span className='text-rose-600 font-semibold'>Email</span>
-                            <span>mail@mail.com</span>
+                            <span className='text-slate-600'>mail@mail.com</span>
                         </a>
                     </div>
             </nav>

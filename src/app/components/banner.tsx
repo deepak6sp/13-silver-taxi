@@ -73,7 +73,7 @@ const Banner = () => {
                         </dl>
                     </div> */}
                 </div>
-                <PhoneIcon aria-hidden="true" className="left-12 bottom-12 fixed rounded-full h-20 w-20 p-6 text-white bg-rose-600" />
+                <PhoneIcon aria-hidden="true" className="left-4 bottom-4 sm:left-12 sm:bottom-12 fixed rounded-full h-12 w-12 p-3 sm:h-20 sm:w-20 sm:p-6 text-white bg-rose-600" />
             </section>
         </>
     )

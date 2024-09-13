@@ -3,6 +3,7 @@
     position: relative;
     background-image: url('../images/taxi1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
   }
   
   /* .overlay::before {

@@ -8,10 +8,10 @@ import {
     Disclosure,
     DisclosureButton,
     DisclosurePanel,
-    Popover,
-    PopoverButton,
+    // Popover,
+    // PopoverButton,
     PopoverGroup,
-    PopoverPanel,
+    // PopoverPanel,
 } from '@headlessui/react'
 
 import {
@@ -93,10 +93,13 @@ const Navbar = () => {
                         </button>
                     </div>
                     <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-                        <a href="#" className="text-sm font-bold leading-6 text-white">
+                        <a href="/" className="text-sm font-bold leading-6 text-white">
                             <strong>HOME</strong>
                         </a>
-                        <Popover className="relative">
+                        <a href="#booking-services" className="text-sm font-bold leading-6 text-white">
+                            <strong>SERVICES</strong>
+                        </a>
+                        {/* <Popover className="relative">
                             <PopoverButton className="flex items-center gap-x-1 text-sm font-bold leading-6 text-white">
                                 SERVICES
                                 <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
@@ -138,14 +141,14 @@ const Navbar = () => {
                                     ))}
                                 </div>
                             </PopoverPanel>
-                        </Popover>
-                        <a href="#" className="text-sm font-bold leading-6 text-white">
+                        </Popover> */}
+                        <a href="/#booking-section" className="text-sm font-bold leading-6 text-white">
                             BOOKING
                         </a>
-                        <a href="#" className="text-sm font-bold leading-6 text-white">
+                        <a href="/contact" className="text-sm font-bold leading-6 text-white">
                             CONTACT
                         </a>
-                        <a href="#" className="text-sm font-bold leading-6 text-white">
+                        <a href="/about" className="text-sm font-bold leading-6 text-white">
                             ABOUT
                         </a>
                     </PopoverGroup>

@@ -21,7 +21,7 @@ export default function Booking() {
     const [agreed, setAgreed] = useState(false)
 
     return (
-        <section className="-mt-8 lg:isolate bg-white px-6 py-16 sm:py-16 lg:px-8 max-w-2xl mx-auto shadow-lg shadow-neutral-500/50 focus:outline-none">
+        <section id="booking-section" className="-mt-8 lg:isolate bg-white px-6 py-16 sm:py-16 lg:px-8 max-w-2xl mx-auto shadow-lg shadow-neutral-500/50 focus:outline-none">
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">Booking</h2>
                 <p className="mt-2 text-lg leading-8 text-slate-600">

@@ -8,9 +8,9 @@ import logo from '../images/logo.jpeg'
 import {
     Dialog,
     DialogPanel,
-    Disclosure,
-    DisclosureButton,
-    DisclosurePanel,
+    // Disclosure,
+    // DisclosureButton,
+    // DisclosurePanel,
     // Popover,
     // PopoverButton,
     PopoverGroup,
@@ -18,27 +18,30 @@ import {
 } from '@headlessui/react'
 
 import {
-    ArrowPathIcon,
+    // ArrowPathIcon,
     Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
+    // ChartPieIcon,
+    // CursorArrowRaysIcon,
+    // FingerPrintIcon,
+    // SquaresPlusIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, EnvelopeIcon, InboxIcon } from '@heroicons/react/20/solid'
+import { 
+    // ChevronDownIcon, 
+    // PlayCircleIcon,
+    PhoneIcon, EnvelopeIcon, InboxIcon } from '@heroicons/react/20/solid'
 
-const products = [
-    { name: 'Airport transfer', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Wedding transfer', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Hotel transfer', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Corporate transfer', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Events Tranfer', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-    { name: 'Book now', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact us', href: '#', icon: PhoneIcon },
-]
+// const products = [
+//     { name: 'Airport transfer', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+//     { name: 'Wedding transfer', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+//     { name: 'Hotel transfer', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+//     { name: 'Corporate transfer', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+//     { name: 'Events Tranfer', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+// ]
+// const callsToAction = [
+//     { name: 'Book now', href: '#', icon: PlayCircleIcon },
+//     { name: 'Contact us', href: '#', icon: PhoneIcon },
+// ]
 
 
 const Navbar = () => {
@@ -104,7 +107,7 @@ const Navbar = () => {
                         <a href="/" className="text-sm font-bold leading-6 text-white">
                             <strong>HOME</strong>
                         </a>
-                        <a href="#booking-services" className="text-sm font-bold leading-6 text-white">
+                        <a href="#services-section" className="text-sm font-bold leading-6 text-white">
                             <strong>SERVICES</strong>
                         </a>
                         {/* <Popover className="relative">
@@ -175,13 +178,13 @@ const Navbar = () => {
                     <div className="fixed inset-0 z-10" />
                     <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
-                            <a href="#" className="-m-1.5 p-1.5">
+                            <a href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <img
-                                    alt=""
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=white"
-                                    className="h-8 w-auto"
-                                />
+                                <Image
+                  alt=""
+                  src={logo}
+                  className="w-32"
+              />
                             </a>
                             <button
                                 type="button"
@@ -196,12 +199,19 @@ const Navbar = () => {
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
                                     <a
-                                        href="#"
+                                        href="/"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800"
                                     >
-                                        HOME
+                                        Home
                                     </a>
-                                    <Disclosure as="div" className="-mx-3">
+                                    <a
+                                    onClick={() => setMobileMenuOpen(false)}
+                                        href="#services-section"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800"
+                                    >
+                                        Services
+                                    </a>
+                                    {/* <Disclosure as="div" className="-mx-3">
                                         <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800">
                                             Services
                                             <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
@@ -218,22 +228,23 @@ const Navbar = () => {
                                                 </DisclosureButton>
                                             ))}
                                         </DisclosurePanel>
-                                    </Disclosure>
+                                    </Disclosure> */}
 
                                     <a
-                                        href="#"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                        href="/#booking-section"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800"
                                     >
                                         Booking
                                     </a>
                                     <a
-                                        href="#"
+                                        href="/contact"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800"
                                     >
                                         Contact us
                                     </a>
                                     <a
-                                        href="#"
+                                        href="/about"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-white hover:bg-white hover:text-slate-800"
                                     >
                                         About us
